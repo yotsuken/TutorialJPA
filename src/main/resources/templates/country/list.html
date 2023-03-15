@@ -11,12 +11,16 @@
             <th>コード</th>
             <th>国名</th>
             <th>人口</th>
+            <a th:href="@{/country/detail/その他のコード}">詳細</a>
+            <a th:href="@{/country/delete/その他のコード}">削除</a>
+
         </tr>
         <tr th:each="data : ${countrylist}">
             <td th:text="${data.code}"></td>
             <td th:text="${data.name}"></td>
             <td th:text="${data.population}"></td>
         </tr>
+
     </table>
 </body>
 </html>
